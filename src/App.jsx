@@ -1,7 +1,9 @@
-import { BrowserRouter, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import HeaderComponent from './components/HeaderComponent'
 import FooterComponent from './components/FooterComponent'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ListPowerBIComponent from './components/ListPowerBIComponent';
 
 function App() {
 
@@ -10,11 +12,11 @@ function App() {
     <BrowserRouter>
       <HeaderComponent />
         <Routes>
-          {/* <Route path='/' element = { <ListEmployeeComponent />}></Route>
-          <Route path='/employees' element = { <ListEmployeeComponent />}></Route>
+          <Route path='/' element = { <ListPowerBIComponent />}></Route>
+          <Route path='/powerbi' element = { <ListPowerBIComponent />}></Route>
 
-          <Route path='/add-employee' element = { <EmployeeComponent /> }></Route>
-          <Route path='/edit-employee/:id' element = {<EmployeeComponent />}></Route> */}
+          {/* <Route path='/add-employee' element = { <EmployeeComponent /> }></Route> */}
+          {/* <Route path='/edit-employee/:id' element = {<EmployeeComponent />}></Route> */}
         </Routes>
       <FooterComponent />
     </BrowserRouter>
